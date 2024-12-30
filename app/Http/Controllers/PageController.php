@@ -28,6 +28,10 @@ class PageController extends Controller
 
         $currentPage = Page::findBySlug($slug);
 
+        if (!isset($currentPage->id)) {
+            abort(404);
+        }
+        
         $viewData = [
             'currentPage' => $currentPage,
         ];
