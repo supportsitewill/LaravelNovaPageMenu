@@ -27,7 +27,7 @@ class PageResource extends Resource
     public static $title = 'title';
 
     public static $search = [
-        'id', 'title'
+        'id', 'title', 'slug', 'headline', 'body', 'external_link', 'meta_title', 'meta_description', 'type',
     ];
 
     public static $group = 'Content';
